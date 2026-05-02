@@ -83,7 +83,6 @@
 
         <c:choose>
 
-            <%-- Produto encontrado --%>
             <c:when test="${not empty produto}">
                 <table>
                     <tr>
@@ -109,7 +108,6 @@
                 </table>
             </c:when>
 
-            <%-- Produto nao encontrado --%>
             <c:otherwise>
                 <p class="erro">${erro}</p>
             </c:otherwise>

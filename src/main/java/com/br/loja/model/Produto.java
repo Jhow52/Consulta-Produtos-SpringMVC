@@ -5,22 +5,14 @@
 package com.br.loja.model;
 import java.math.BigDecimal;
 
-/**
- *
- * @author Jhow
- */
 public class Produto {
     private Long id;
     private String nome;
     private String descricao;
     private BigDecimal preco;
  
-    // Construtor vazio (obrigatorio para o Spring funcionar)
     public Produto() {
     }
- 
-    // Getters e Setters
-    // O Spring usa esses metodos para ler e preencher os dados
  
     public Long getId() {
         return id;

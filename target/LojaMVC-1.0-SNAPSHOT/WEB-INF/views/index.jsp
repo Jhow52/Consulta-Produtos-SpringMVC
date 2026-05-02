@@ -69,19 +69,10 @@
     <div class="caixa">
         <h1>Consulta de Produtos</h1>
 
-        <%--
-            Formulario de busca.
-            action="/buscar" -> envia para o metodo buscarProduto() do Controller
-            method="get"    -> passa o id pela URL: /buscar?id=X
-        --%>
         <form action="${pageContext.request.contextPath}/buscar" method="get">
 
             <label for="id">Codigo do Produto (ID):</label>
 
-            <%--
-                O name="id" deve ser igual ao @RequestParam("id")
-                que esta no ProdutoController
-            --%>
             <input type="number" id="id" name="id" min="1" placeholder="Ex: 1, 2, 3..." required />
 
             <button type="submit">Buscar</button>
